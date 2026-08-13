@@ -11,5 +11,3 @@ class Solution(object):
 
         else:
             return nums[-3]
-
-
