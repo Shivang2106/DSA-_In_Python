@@ -1,8 +1,6 @@
 class Solution(object):
     def singleNumber(self, nums):
-        result = 0
-
-        for num in nums:
-            result = result ^ num
-
-        return result
+        nums.sort()
+        for i in range(len(nums)):
+            if nums.count(nums[i]) == 1:
+                return nums[i]
