@@ -11,8 +11,8 @@ class Solution:
         }
 
         for c in moves:
-            dx, dy = dir[c]
-            x += dx
-            y += dy
+            x1, y1 = dir[c]
+            x += x1
+            y += y1
 
         return [x, y] == [0, 0]
