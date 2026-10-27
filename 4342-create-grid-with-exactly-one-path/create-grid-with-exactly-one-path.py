@@ -1,3 +1,3 @@
 class Solution:
-    def createGrid(self,m,n):
+    def createGrid(self, m, n):
         return ['.' + '#' * (n - 1)] * (m - 1) + ['.' * n]
